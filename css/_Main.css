@@ -1,0 +1,103 @@
+.img-m-1 {
+  position: relative;
+  float: left;
+  height: 47vh;
+  margin-left: 5vw;
+  margin-top: 5vw;
+  margin-right: 1.666666666666666666666666666666666666666666666666666666666666666666vw;
+  margin-bottom: 3.666666666666666666666666666666666666666666666666666666666666666666vw;
+  border-style: groove;
+    transition: transform 0.5s ease;
+}
+
+.img-m-1.container {
+  overflow: hidden;
+}
+
+.img-m-1:hover {
+  transform: scale(1.05);
+}
+
+/* spin animation
+.img-m-1 {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg );
+    }
+}
+*/
+.img-m-2 {
+  float: right;
+  height: 47vh;
+  width: 35vw;
+  margin-left: 1.666666666666666666666666666666666666666666666666666666666666666666vw;
+  margin-top: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 3.666666666666666666666666666666666666666666666666666666666666666666vw;
+  border-style: groove;
+    transition: transform 0.5s ease;
+
+}
+
+.img-m-2:hover {
+  transform: scale(1.05);à
+}
+
+/* spin animation
+.img-m-2 {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg );
+    }
+}
+*/
+.Volleyball {
+  float: left;
+  text-decoration: none;
+  color: black;
+  font-size: 25pt;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Montserrat", normal, sans-serif;
+  font-family: 'Montserrat',normal, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 5vw;
+}
+.Volleyball {
+  transition: transform 0.75s ease-in-out;
+}
+
+.Volleyball:hover {
+  transform: translateX(50px);
+}
+
+.SC{
+  float: right;
+  text-decoration: none;
+  color: black;
+  font-size: 25pt;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Montserrat", normal, sans-serif;
+  font-family: 'Montserrat',normal, sans-serif;
+  font-weight: lighter;
+  margin-right: 370px;
+  text-align: left;
+}
+
+.SC {
+  transition: transform 0.75s ease-in-out;
+}
+
+.SC:hover {
+  transform: translateX(50px);
+}

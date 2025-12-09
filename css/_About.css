@@ -1,0 +1,55 @@
+.container-float {
+  display: flex;
+  justify-content: space-around;
+}
+
+.A-sec-01 {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-right: solid #737373;
+  width: 95%;
+  font-weight: thin;
+  text-align: inherit;
+    font-size: 20pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Montserrat", normal, sans-serif;
+    font-family: 'Montserrat',normal, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.A-sec-02 {
+  float: right;
+  width: 48%;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin: 5px;
+  text-align: left;
+  line-height: 0.75;
+}
+
+.A-text-02 {
+  text-align: left;
+}
+
+.container-float::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section-hr {
+  float: left;
+  width: 650px;
+  background-color: #737373;
+}
+
+.non-style {
+  font-family: 'Roxborough CF' ;
+  src: url('roxborough-cf-light.otf') format('truetype');
+}
+
+.non-style:hover {
+  color: grey;
+}
