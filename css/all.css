@@ -119,10 +119,11 @@ p {
       color: white;
       border: 1px solid #1B3C53;
     }
-}
+
 #loginButton {
   float: right;
 }
+
 
 .Navigation-top {
   background-color: #e8e8e8;
@@ -151,7 +152,6 @@ p {
   position: fixed;
   z-index: 9999999;
   top: 0;
-  bottom: 50%;
   transform: translate(-50%, -50%) scale(0.1);
   text-align: center;
   padding: 0 30px 30px;
@@ -160,7 +160,7 @@ p {
   margin-left: 50vw;
 }
 
-.open-popup {
+.popup.open-popup {
   visibility: visible;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -183,4 +183,60 @@ p {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-menu {
+  position: fixed;
+  top: 8vh;
+  right: 0.5vw;
+
+  width: 18vw;
+  min-width: 220px;
+  max-width: 350px;
+
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  z-index: 1000;
+}
+
+.user-menu a {
+  display: block;
+
+  padding: 15px 20px;
+
+  color: #1B3C53;
+  text-decoration: none;
+
+  transition: background-color 0.2s;
+}
+
+.user-menu a:hover {
+  background-color: #f0f4f7;
+  color: #1B3C53;
+}
+
+.user-menu a:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.user-menu::before {
+  content: "";
+
+  position: absolute;
+
+  top: -10px;
+  right: 25px;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+@media (max-width: 768px) {
+  .user-menu {
+    width: 80vw;
+    right: 5vw;
+  }
 }
